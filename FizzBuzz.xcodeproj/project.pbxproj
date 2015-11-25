@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E5A5F16B1B5ACE7F00421EDD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E5A5F16A1B5ACE7F00421EDD /* main.c */; };
+		E5A5F17A1B5ACEF200421EDD /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A5F1791B5ACEF200421EDD /* FizzBuzzTests.swift */; };
+		E5A5F1881B5AF2EA00421EDD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E5A5F16A1B5ACE7F00421EDD /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,22 @@
 /* Begin PBXFileReference section */
 		E5A5F1671B5ACE7F00421EDD /* FizzBuzz */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FizzBuzz; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A5F16A1B5ACE7F00421EDD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		E5A5F1751B5ACEF200421EDD /* FizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A5F1781B5ACEF200421EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5A5F1791B5ACEF200421EDD /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
+		E5A5F17E1B5AD2A600421EDD /* FizzBuzzTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FizzBuzzTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		E5A5F1801B5AD2A600421EDD /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E5A5F1641B5ACE7F00421EDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5A5F1721B5ACEF200421EDD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				E5A5F1691B5ACE7F00421EDD /* FizzBuzz */,
+				E5A5F1761B5ACEF200421EDD /* FizzBuzzTests */,
 				E5A5F1681B5ACE7F00421EDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				E5A5F1671B5ACE7F00421EDD /* FizzBuzz */,
+				E5A5F1751B5ACEF200421EDD /* FizzBuzzTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +74,27 @@
 			isa = PBXGroup;
 			children = (
 				E5A5F16A1B5ACE7F00421EDD /* main.c */,
+				E5A5F1801B5AD2A600421EDD /* main.h */,
+				E5A5F17E1B5AD2A600421EDD /* FizzBuzzTests-Bridging-Header.h */,
 			);
 			path = FizzBuzz;
+			sourceTree = "<group>";
+		};
+		E5A5F1761B5ACEF200421EDD /* FizzBuzzTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5A5F1791B5ACEF200421EDD /* FizzBuzzTests.swift */,
+				E5A5F1771B5ACEF200421EDD /* Supporting Files */,
+			);
+			path = FizzBuzzTests;
+			sourceTree = "<group>";
+		};
+		E5A5F1771B5ACEF200421EDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5A5F1781B5ACEF200421EDD /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +117,23 @@
 			productReference = E5A5F1671B5ACE7F00421EDD /* FizzBuzz */;
 			productType = "com.apple.product-type.tool";
 		};
+		E5A5F1741B5ACEF200421EDD /* FizzBuzzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5A5F17B1B5ACEF200421EDD /* Build configuration list for PBXNativeTarget "FizzBuzzTests" */;
+			buildPhases = (
+				E5A5F1711B5ACEF200421EDD /* Sources */,
+				E5A5F1721B5ACEF200421EDD /* Frameworks */,
+				E5A5F1731B5ACEF200421EDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FizzBuzzTests;
+			productName = FizzBuzzTests;
+			productReference = E5A5F1751B5ACEF200421EDD /* FizzBuzzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +144,9 @@
 				ORGANIZATIONNAME = "TAM Software";
 				TargetAttributes = {
 					E5A5F1661B5ACE7F00421EDD = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					E5A5F1741B5ACEF200421EDD = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
@@ -109,9 +164,20 @@
 			projectRoot = "";
 			targets = (
 				E5A5F1661B5ACE7F00421EDD /* FizzBuzz */,
+				E5A5F1741B5ACEF200421EDD /* FizzBuzzTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5A5F1731B5ACEF200421EDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5A5F1631B5ACE7F00421EDD /* Sources */ = {
@@ -119,6 +185,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5A5F16B1B5ACE7F00421EDD /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5A5F1711B5ACEF200421EDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5A5F17A1B5ACEF200421EDD /* FizzBuzzTests.swift in Sources */,
+				E5A5F1881B5AF2EA00421EDD /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,14 +280,58 @@
 		E5A5F16F1B5ACE7F00421EDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FizzBuzz/FizzBuzz-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		E5A5F1701B5ACE7F00421EDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FizzBuzz/FizzBuzz-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		E5A5F17C1B5ACEF200421EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FizzBuzz/FizzBuzzTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E5A5F17D1B5ACEF200421EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FizzBuzz/FizzBuzzTests-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -233,6 +352,14 @@
 			buildConfigurations = (
 				E5A5F16F1B5ACE7F00421EDD /* Debug */,
 				E5A5F1701B5ACE7F00421EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E5A5F17B1B5ACEF200421EDD /* Build configuration list for PBXNativeTarget "FizzBuzzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5A5F17C1B5ACEF200421EDD /* Debug */,
+				E5A5F17D1B5ACEF200421EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
